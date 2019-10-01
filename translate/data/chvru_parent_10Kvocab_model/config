@@ -1,0 +1,195 @@
+!ModelConfig
+config_data: !DataConfig
+  data_statistics: !DataStatistics
+    average_len_target_per_bucket:
+    - 4.676621311185731
+    - 11.443990828253487
+    - 18.798324504126906
+    - 26.232829866058868
+    - 33.495331896994074
+    - 41.181475029036214
+    - 48.65590312815327
+    - 56.238154613466364
+    - 63.76567363272572
+    - 71.4182561307903
+    - 83.87301587301586
+    - 91.99999999999999
+    - 98.33333333333333
+    buckets:
+    - !!python/tuple
+      - 10
+      - 8
+    - !!python/tuple
+      - 20
+      - 16
+    - !!python/tuple
+      - 30
+      - 24
+    - !!python/tuple
+      - 40
+      - 32
+    - !!python/tuple
+      - 50
+      - 40
+    - !!python/tuple
+      - 60
+      - 48
+    - !!python/tuple
+      - 70
+      - 56
+    - !!python/tuple
+      - 80
+      - 64
+    - !!python/tuple
+      - 90
+      - 72
+    - !!python/tuple
+      - 100
+      - 80
+    - !!python/tuple
+      - 100
+      - 88
+    - !!python/tuple
+      - 100
+      - 96
+    - !!python/tuple
+      - 100
+      - 100
+    length_ratio_mean: 0.8128617526177364
+    length_ratio_stats_per_bucket:
+    - !!python/tuple
+      - 0.8412561205589995
+      - 0.30827828664462725
+    - !!python/tuple
+      - 0.8181788896772517
+      - 0.2591696222801833
+    - !!python/tuple
+      - 0.8049011761434256
+      - 0.2138045640061947
+    - !!python/tuple
+      - 0.8031734056185844
+      - 0.1674069434084203
+    - !!python/tuple
+      - 0.7979765839498951
+      - 0.1618419430097479
+    - !!python/tuple
+      - 0.8013514611852365
+      - 0.14353311059241447
+    - !!python/tuple
+      - 0.7995273996573151
+      - 0.13877926017851686
+    - !!python/tuple
+      - 0.8011774427142178
+      - 0.13602241987013042
+    - !!python/tuple
+      - 0.7992393986077297
+      - 0.1336309982566928
+    - !!python/tuple
+      - 0.7993226503974742
+      - 0.13095589822148795
+    - !!python/tuple
+      - 0.9263424148417052
+      - 0.09000642570932925
+    - !!python/tuple
+      - 0.9787110110233701
+      - 0.061248659221400326
+    - !!python/tuple
+      - 1.0130298340825412
+      - 0.035349059764849186
+    length_ratio_std: 0.22105706077130954
+    max_observed_len_source: 100
+    max_observed_len_target: 100
+    num_discarded: 4280
+    num_sents: 94161
+    num_sents_per_bucket:
+    - 16977
+    - 17881
+    - 16234
+    - 14036
+    - 9747
+    - 6888
+    - 4955
+    - 3208
+    - 2249
+    - 1468
+    - 378
+    - 128
+    - 12
+    num_tokens_source: 2883434
+    num_tokens_target: 2281951
+    num_unks_source: 0
+    num_unks_target: 0
+    size_vocab_source: 7276
+    size_vocab_target: 8323
+  max_seq_len_source: 100
+  max_seq_len_target: 100
+  num_source_factors: 1
+  source_with_eos: true
+config_decoder: !TransformerConfig
+  act_type: relu
+  attention_heads: 8
+  conv_config: null
+  dropout_act: 0.1
+  dropout_attention: 0.1
+  dropout_prepost: 0.1
+  dtype: float32
+  feed_forward_num_hidden: 256
+  lhuc: false
+  max_seq_len_source: 100
+  max_seq_len_target: 100
+  model_size: 512
+  num_layers: 6
+  positional_embedding_type: fixed
+  postprocess_sequence: dr
+  preprocess_sequence: n
+  use_lhuc: false
+config_embed_source: !EmbeddingConfig
+  dropout: 0.0
+  dtype: float32
+  factor_configs: null
+  num_embed: 512
+  num_factors: 1
+  source_factors_combine: concat
+  vocab_size: 7276
+config_embed_target: !EmbeddingConfig
+  dropout: 0.0
+  dtype: float32
+  factor_configs: null
+  num_embed: 512
+  num_factors: 1
+  source_factors_combine: concat
+  vocab_size: 8323
+config_encoder: !TransformerConfig
+  act_type: relu
+  attention_heads: 8
+  conv_config: null
+  dropout_act: 0.1
+  dropout_attention: 0.1
+  dropout_prepost: 0.1
+  dtype: float32
+  feed_forward_num_hidden: 256
+  lhuc: false
+  max_seq_len_source: 100
+  max_seq_len_target: 100
+  model_size: 512
+  num_layers: 6
+  positional_embedding_type: fixed
+  postprocess_sequence: dr
+  preprocess_sequence: n
+  use_lhuc: false
+config_length_task: null
+config_length_task_loss: null
+config_loss: !LossConfig
+  label_smoothing: 0.1
+  length_task_link: null
+  length_task_weight: 1.0
+  name: cross-entropy
+  normalization_type: valid
+  vocab_size: 8323
+lhuc: false
+num_pointers: 0
+vocab_source_size: 7276
+vocab_target_size: 8323
+weight_normalization: false
+weight_tying: false
+weight_tying_type: null

@@ -1,0 +1,21 @@
+{% load static %}
+
+<head>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <meta name="keywords" content="Спрягатель спряжение чувашский глагол" />
+  <meta name="description" content="Спряжение чувашских глаголов" />
+  <title>{{ conj_title }}</title>
+  <link rel="icon" type="image/png" href="{% static "images/favicon.png" %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'translate/style.css' %}">
+</head>
+
+<div class="video">
+  <h1>{{ conj_title }}</h1>
+  <form method="post">
+  {% csrf_token %}
+  <textarea name="textsrc" cols="40" rows="5">{{ src_sent|default_if_none:"" }}</textarea>
+  <textarea name="texttgt" cols="40" rows="5">{{ tgt_sent|default_if_none:"" }} </textarea>
+  <br><br>
+  <input type="submit" value="Перевести" name="do_edit" class="bigButton">
+  </form>
+</div>

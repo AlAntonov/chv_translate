@@ -1,0 +1,136 @@
+.bigText {
+    height: 30px;
+    font-size: 14pt;
+	width: 65%;
+	min-width: 200px;
+    max-width: 300px;
+	color: rgb(82,82,82);
+    font-family: "Montserrat";
+	border:1px solid rgb(182,182,182);
+	border-radius: 5px 5px 5px 5px;
+    padding-left: 5px;
+}
+
+.bigButton {
+    height:30px;
+    font-size:14pt;
+	width: 30%;
+	min-width:100px;
+    max-width: 150px;
+	color: rgb(82,82,82);
+    font-family: "Montserrat";
+	border:1px solid rgb(182,182,182);
+	border-radius: 5px 5px 5px 5px;
+}
+
+.table {
+	position: relative;
+	width: calc(30%-10px);
+    font-size: 14pt;
+	min-width:250px;
+    max-width: 300px;
+	float: left;
+	color: rgb(82,82,82);
+	border:1px solid rgb(182,182,182);
+	border-radius: 5px 5px 5px 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.table th {
+    font-size: 14pt;
+    text-align: left;
+	font-weight: normal;
+    vertical-align: middle;
+	border: none;
+}
+
+.table sub{
+    font-size: 14pt;
+    text-align: left;
+    vertical-align: bottom;
+	border: none;
+	color: rgb(182,182,182);
+}
+
+.table step{
+    font-size: 14pt;
+    text-align: left;
+    vertical-align: bottom;
+	border: none;
+}
+
+.table sup{
+    font-size: 14pt;
+    text-align: center;
+	font-weight: bold;
+    vertical-align: bottom;
+	border: none;
+}
+
+.video {
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	left: 70px;
+	right: 140px;
+	color: rgb(82,82,82);
+    font-family: "Montserrat";
+    font-size: 14pt;
+}
+
+.video form {
+	position: relative;
+}
+
+@media screen and (min-width: 532px) and (max-width: 800px) {
+.table {
+	position: relative;
+	width: calc(55%-10px);
+    font-size: 14pt;
+	min-width:200px;
+    max-width: 300px;
+	float: left;
+	color: rgb(82,82,82);
+	border:1px solid rgb(182,182,182);
+	border-radius: 5px 5px 5px 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.video {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	left: 35px;
+	color: rgb(82,82,82);
+    font-family: "Montserrat";
+    font-size: 14pt;
+}
+}
+
+@media screen and (max-width: 531px) {
+.table {
+	position: relative;
+	width: calc(95%-10px);
+    font-size: 14pt;
+	min-width:200px;
+    max-width: 300px;
+	float: left;
+	color: rgb(82,82,82);
+	border:1px solid rgb(182,182,182);
+	border-radius: 5px 5px 5px 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.video {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	left: 0px;
+	color: rgb(82,82,82);
+    font-family: "Montserrat";
+    font-size: 14pt;
+}
+}
